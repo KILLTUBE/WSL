@@ -1,1 +1,1 @@
-%SystemRoot%\System32\bash.exe
+%SystemRoot%\System32\bash.exe -c "cd ~; bash"
