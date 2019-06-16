@@ -1,12 +1,12 @@
 **Enabling WSL**
 
 ```
-	# Press Win+r
-	# Write "powershell"
-	# Press Ctrl+Shift+Enter for Administrator PowerShell
+# Press Win+r
+# Write "powershell"
+# Press Ctrl+Shift+Enter for Administrator PowerShell
 
-	# Execute this command:
-	Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
+# Execute this command:
+Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
 ```
 
 **Installing WSL**
@@ -18,9 +18,16 @@ Simply clone this repo and download it as .zip
 **Basic setup of WSL**
 
 ```bash
-	# Run bash.bat and execute:
-	sudo apt update
-	sudo apt upgrade
+# Run bash.bat and execute:
+sudo apt update
+sudo apt upgrade
+```
+
+**Basic setup of git**
+
+```
+git config --global user.name "yourname"
+git config --global user.email "yourname@gmail.com"
 ```
 
 **Installing node**
@@ -48,7 +55,6 @@ PATH=$PATH":/usr/games"
 PATH=$PATH":/usr/local/games"
 
 # Add this line where you want, e.g. at bottom:
-PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
 PATH=`pwd`"node-v10.16.0-linux-x64/bin":$PATH
 
 # Exit nano via `Ctrl+x` and `y`
